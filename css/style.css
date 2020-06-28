@@ -201,7 +201,6 @@ body {
 
 .block::before {
   content: "";
-  border: 1px solid black;
   display: block;
   padding-top: 25px;
   padding-bottom: 25px;
@@ -253,6 +252,10 @@ body {
 .work-box {
   margin-right: 30px;
   width: 370px;
+  background-image: url(../images/works/box_1.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 }
 
 .work-box:last-child {
@@ -263,7 +266,11 @@ body {
   min-width: 370px;
   padding: 27px 82px;
 
-  background-color: var(--primery-text-color);
+  background-image: linear-gradient(
+    to right,
+    rgba(47, 48, 58, 0.8),
+    rgba(47, 48, 58, 0.8)
+  );
   color: var(--third-text-color);
   font-weight: 700;
   font-size: 14px;
@@ -482,22 +489,53 @@ body {
   padding-top: 54px;
   margin-right: 94px;
 }
+.footer-links {
+  display: inline-block;
+  height: 44px;
+  width: 44px;
+  background-color: rgba(255, 255, 255, 0.1);
+  background-position: center;
+  background-size: 20px;
+  background-repeat: no-repeat;
+  border-radius: 50%;
+}
 
-.footer-links + .footer-links {
-  margin-left: 34px;
+.footer-links-list + .footer-links-list {
+  margin-left: 10px;
+}
+
+.icon-instagram {
+  background-image: url(../images/social_links/instagram.svg);
+}
+.icon-twitter {
+  background-image: url(../images/social_links/twitter.svg);
+}
+
+.icon-facebook {
+  background-image: url(../images/social_links/facebook.svg);
+}
+.icon-linkendin {
+  background-image: url(../images/social_links/linkedin.svg);
+}
+
+.footer-links:hover {
+  background-color: #2196f3;
 }
 
 .form-page {
   min-width: 570px;
   padding-top: 54px;
 }
-
+.form-inner {
+  display: flex;
+}
 /* subscription */
 .button {
-  display: inline-block;
+  display: inline-flex;
   padding: 10px 32px;
   border-radius: 4px;
   min-width: 200px;
+  margin-left: 12px;
 
   color: var(--third-text-color);
   background-color: var(--accent-text-color);
@@ -511,6 +549,37 @@ body {
   align-items: center;
   text-align: center;
   letter-spacing: 0.06em;
+}
+.button-footer {
+  display: inline-flex;
+  padding: 10px 32px;
+  border-radius: 4px;
+  min-width: 200px;
+  margin-left: 12px;
+
+  color: var(--third-text-color);
+  background-color: var(--accent-text-color);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border: 1px solid transparent;
+
+  font-family: inherit;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.9;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.06em;
+}
+.button-footer::after {
+  content: "";
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+  margin-left: 10px;
+  background-image: url(../images/subscription-logo.svg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 .logo-img {
   width: 13px;
