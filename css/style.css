@@ -199,20 +199,33 @@ body {
   margin-right: 30px;
 }
 
+.block::before {
+  content: "";
+  border: 1px solid black;
+  display: block;
+  padding-top: 25px;
+  padding-bottom: 25px;
+  margin-bottom: 30px;
+  height: 120px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: #f5f4fa;
+  /* background-size: contain; */
+}
+.icon-antena::before {
+  background-image: url(../images/advantages/antenna.svg);
+}
+.icon-clock::before {
+  background-image: url(../images/advantages/clock.svg);
+}
+.icon-pc::before {
+  background-image: url(../images/advantages/diagram.svg);
+}
+.icon-astronaut::before {
+  background-image: url(../images/advantages/astronaut.svg);
+}
 .block:last-child {
   margin-right: 0;
-}
-
-.advantages-img {
-  padding: 25px 102px;
-  margin-bottom: 30px;
-  background-color: #f5f4fa;
-  border-radius: 4px;
-}
-
-.advantages-img:hover,
-.advantages-img:focus {
-  background-color: var(--accent-text-color);
 }
 
 .advantages-title {
@@ -221,6 +234,7 @@ body {
   font-size: 14px;
   line-height: 1.14;
   text-transform: uppercase;
+  margin-bottom: 10px;
 }
 
 .advantages-text {
