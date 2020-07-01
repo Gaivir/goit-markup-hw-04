@@ -135,6 +135,7 @@ body {
 /* conntacs */
 .contacts-header {
   display: flex;
+  align-items: center;
   padding-top: 32px;
   padding-bottom: 32px;
   margin-left: auto;
@@ -151,6 +152,13 @@ body {
 .contact-link:hover,
 .contact-link:focus {
   color: var(--accent-text-color);
+}
+
+.icon-contacts {
+  width: 16px;
+  height: 11px;
+  margin-right: 10px;
+  fill: currentColor;
 }
 
 /* hero section */
@@ -531,7 +539,7 @@ body {
 }
 /* subscription */
 .button {
-  display: inline-flex;
+  display: inline-block;
   padding: 10px 32px;
   border-radius: 4px;
   min-width: 200px;
@@ -547,11 +555,10 @@ body {
   font-size: 16px;
   line-height: 1.9;
   align-items: center;
-  text-align: center;
   letter-spacing: 0.06em;
 }
 .button-footer {
-  display: inline-flex;
+  display: flex;
   padding: 10px 32px;
   border-radius: 4px;
   min-width: 200px;
@@ -567,7 +574,6 @@ body {
   font-size: 16px;
   line-height: 1.9;
   align-items: center;
-  text-align: center;
   letter-spacing: 0.06em;
 }
 .button-footer::after {
