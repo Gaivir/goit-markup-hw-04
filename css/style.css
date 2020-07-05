@@ -78,6 +78,9 @@ body {
 /* Header */
 .header {
   border: 1px solid rgba(117, 117, 117, 0.3);
+  width: 1600px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .header-container {
@@ -148,6 +151,7 @@ body {
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
+  text-align: center;
 }
 .contact-link:hover,
 .contact-link:focus {
@@ -163,6 +167,10 @@ body {
   height: 11px;
   margin-right: 10px;
   fill: currentColor;
+}
+.icon-phone {
+  width: 9px;
+  height: 15px;
 }
 
 /* hero section */
@@ -472,12 +480,14 @@ body {
 
 /* footer */
 .footer-block {
+  width: 1600px;
   height: 252px;
-  background-color: #2f303a;
+
   margin-left: auto;
   margin-right: auto;
   padding-left: 15px;
   padding-right: 15px;
+  background-color: #2f303a;
 }
 
 /*footer-logo */
@@ -558,7 +568,7 @@ body {
 }
 
 .icon-facebook {
-  background-image: url(../images/social_links/facebook.svg);
+  background-image: url(../images/sprite.svg#icon-facebook);
 }
 .icon-linkendin {
   background-image: url(../images/social_links/linkedin.svg);
