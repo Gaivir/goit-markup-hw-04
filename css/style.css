@@ -231,26 +231,19 @@ body {
 }
 
 .block-img {
+  display: flex;
+  justify-content: center;
+  padding-top: 25px;
   width: 270px;
   height: 120px;
   margin-bottom: 30px;
-  background-position: center;
-  background-repeat: no-repeat;
   background-color: #f5f4fa;
-  background-size: contain;
 }
-.icon-antena {
-  background-image: url(../images/advantages/symbol-defs.svg#icon-antenna);
+.icon-advantage {
+  width: 70px;
+  height: 70px;
 }
-.icon-clock {
-  background-image: url(../images/advantages/symbol-defs.svg#icon-clock);
-}
-.icon-pc {
-  background-image: url(../images/advantages/symbol-defs.svg#icon-diagram);
-}
-.icon-astronaut {
-  background-image: url(../images/advantages/symbol-defs.svg#icon-astronaut);
-}
+
 .block:last-child {
   margin-right: 0;
 }
@@ -572,11 +565,8 @@ body {
   display: inline-block;
   width: 44px;
   height: 44px;
+  padding: 12px;
   background-color: rgba(255, 255, 255, 0.1);
-  background-position: center;
-  background-size: 20px;
-  background-repeat: no-repeat;
-  background-size: contain;
   border-radius: 50%;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -585,8 +575,9 @@ body {
   margin-left: 10px;
 }
 
-.icon-instagram {
-  background-image: url(../images/sprite.svg#icon-instagram);
+.icon-footer {
+  width: 20px;
+  height: 20px;
 }
 .icon-twitter {
   background-image: url(../images/sprite.svg#icon-twitter);
